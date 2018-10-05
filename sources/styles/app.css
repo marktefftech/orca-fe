@@ -1,0 +1,31 @@
+/* body{
+	background: #F2EFEA;
+}
+div.country_flag{
+	width: 120px;
+	float: left;
+}
+
+div.country_flag img{
+	border: none;
+}
+.webix_layout_space, .webix_layout_wide, .webix_layout_accordion{
+	background: url(common/bg.jpg);
+}
+
+div.country_info span{
+	display: block;
+	width: 64px;
+	font-weight: bold;
+	float: left;
+}
+.country_info, .country_flag{
+	padding:8px;
+	line-height: 21px;
+}
+.bigHeader .webix_accordionitem_label{
+	line-height: 45px;
+}
+.bigHeader .webix_accordionitem_button{
+	margin-top: 17px;
+} */
