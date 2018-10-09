@@ -5,9 +5,16 @@ export default class CountriesView extends JetView {
 	config(){
 		return {
 			view:"list",
+			width:240,
 			select:true,
-			template:obj => {
-				return obj.name;
+			type:{
+				height:76,
+				template:obj => `<image class="flag" src="common/flags/${obj.img}.png" />
+					<div class="text">
+						<span class="country_name">${obj.name}</span>
+						<span class="country_area">$${obj.area}</span>
+						<span class="capital">$${obj.capital}</span>
+					</div>`
 			},
 			on:{
 				onAfterSelect:function(id) {
@@ -18,14 +25,13 @@ export default class CountriesView extends JetView {
 
 					//load new data in chart
 					// $$('economic').clearAll();
-					// $$('economic').parse(item.chart, "xml");
+					// $$('economic').parse(item.chart);
 				
 					// //load new data in list
 					// $$('cities').clearAll();
 					// $$('cities').parse(item.cities, "legacy");
 				}
-			},
-			type:{ height: 84 }
+			}
 		};
 	}
 	init(list){

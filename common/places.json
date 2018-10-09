@@ -1,7 +1,7 @@
 [
    {
       "id": "1",
-      "img": "czech_republic.png",
+      "img": "czech-republic",
       "name": "Czech Republic",
       "area": "78,866 sq km",
       "capital": "Prague",
@@ -15,7 +15,7 @@
    },
    {
       "id": "2",
-      "img": "belarus.png",
+      "img": "belarus",
       "name": "Belarus",
       "area": "207,560 sq km",
       "capital": "Minsk",
@@ -29,7 +29,7 @@
    },
    {
       "id": "3",
-      "img": "france.png",
+      "img": "france",
       "name": "France",
       "area": "674,843 sq km",
       "capital": "Paris",
@@ -43,7 +43,7 @@
    },
    {
       "id": "4",
-      "img": "russia.png",
+      "img": "russia",
       "name": "Russia",
       "area": "17,098,246 sq km",
       "capital": "Moscow",
@@ -57,7 +57,7 @@
    },
    {
       "id": "5",
-      "img": "brazil.png",
+      "img": "brazil",
       "name": "Brazil",
       "area": "8,515,767 sq km",
       "capital": "Brasilia",
@@ -71,7 +71,7 @@
    },
    {
       "id": "6",
-      "img": "united_states.png",
+      "img": "united-states-of-america",
       "name": "United States",
       "area": "9,826,675 sq km",
       "capital": "Washington",
@@ -85,7 +85,7 @@
    },
    {
       "id": "7",
-      "img": "canada.png",
+      "img": "canada",
       "name": "Canada",
       "area": "9,984,670 sq km",
       "capital": "Ottawa",
@@ -99,7 +99,7 @@
    },
    {
       "id": "8",
-      "img": "united_arab_emirates.png",
+      "img": "united-arab-emirates",
       "name": "United Arab Emirates",
       "area": "83,600 sq km",
       "capital": "Abu Dhab",
@@ -113,7 +113,7 @@
    },
    {
       "id": "9",
-      "img": "zimbabwe.png",
+      "img": "zimbabwe",
       "name": "Zimbabwe",
       "area": "390,580 sq km",
       "capital": "Harare",
@@ -127,7 +127,7 @@
    },
    {
       "id": "10",
-      "img": "poland.png",
+      "img": "poland",
       "name": "Poland",
       "area": "312,685 sq km",
       "capital": "Warsaw",
@@ -141,7 +141,7 @@
    },
    {
       "id": "11",
-      "img": "argentina.png",
+      "img": "argentina",
       "name": "Argentina",
       "area": "2,780,400 sq km",
       "capital": "Buenos Aires",
@@ -155,7 +155,7 @@
    },
    {
       "id": "12",
-      "img": "switzerland.png",
+      "img": "switzerland",
       "name": "Switzerland",
       "area": "41,285 sq km",
       "capital": "Bern",
@@ -169,7 +169,7 @@
    },
    {
       "id": "13",
-      "img": "turkey.png",
+      "img": "turkey",
       "name": "Turkey",
       "area": "783,562 sq km",
       "capital": "Ankara",
@@ -183,7 +183,7 @@
    },
    {
       "id": "14",
-      "img": "united_kingdom.png",
+      "img": "united-kingdom",
       "name": "United Kingdom",
       "area": "243,610 sq km",
       "capital": "London",
@@ -197,7 +197,7 @@
    },
    {
       "id": "15",
-      "img": "spain.png",
+      "img": "spain",
       "name": "Spain",
       "area": "504,782 sq km",
       "capital": "Madrid",
@@ -211,7 +211,7 @@
    },
    {
       "id": "16",
-      "img": "chile.png",
+      "img": "chile",
       "name": "Chile",
       "area": "756,096 sq km",
       "capital": "Santiago",
@@ -225,7 +225,7 @@
    },
    {
       "id": "17",
-      "img": "china.png",
+      "img": "china",
       "name": "China",
       "area": "9,706,961 sq km",
       "capital": "Beijing",
@@ -239,7 +239,7 @@
    },
    {
       "id": "18",
-      "img": "togo.png",
+      "img": "togo",
       "name": "Togo",
       "area": "56,785 sq km",
       "capital": "Lome",
@@ -253,7 +253,7 @@
    },
    {
       "id": "19",
-      "img": "japan.png",
+      "img": "japan",
       "name": "Japan",
       "area": "377,944 sq km",
       "capital": "Tokyo",
@@ -267,7 +267,7 @@
    },
    {
       "id": "20",
-      "img": "norway.png",
+      "img": "norway",
       "name": "Norway",
       "area": "385,199 sq km",
       "capital": "Oslo",
