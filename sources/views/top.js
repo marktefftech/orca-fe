@@ -13,7 +13,6 @@ export default class TopView extends JetView{
 					cols:[
 						{
 							header:"Countries",
-							headerHeight:45,
 							body:CountriesView
 						},
 						{

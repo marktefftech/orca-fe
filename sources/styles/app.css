@@ -15,3 +15,10 @@
 	display:block;
 	line-height:20px;
 }
+/* grid */
+.webix_icon.green{
+	color:#55CD97;
+}
+.webix_icon.red{
+	color:#FF5C4C;
+}
