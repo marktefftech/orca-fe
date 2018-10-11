@@ -17,12 +17,12 @@ export default class MapView extends JetView {
 		this.updateMap(cid);
 	}
 	updateMap(id){
-		const map = this.getRoot();
 		if (window.google){
 			const item = countries.getItem(id);
-			map.config.zoom = item.zoom;
-			map.config.center = [item.lat,item.lng];
-			map.render();
+			this.getRoot().getMap().setOptions({
+				zoom:item.zoom,
+				center:new google.maps.LatLng(item.lat,item.lng)
+			});
 		}
 	}
 }
