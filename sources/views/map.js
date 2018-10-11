@@ -1,4 +1,5 @@
 import {JetView} from "webix-jet";
+import {countries} from "models/countries";
 
 export default class MapView extends JetView {
 	config(){
@@ -9,23 +10,19 @@ export default class MapView extends JetView {
 		};
 	}
 	init(){
-		this.on(this.app,"country:select",item => {
-		//show position on map
-			if (window.google){ //google api is ready
-				var myLatlng = new google.maps.LatLng(item.lat, item.lng);
-				this.setOptions({
-					zoom: parseInt(item.zoom),
-					center: myLatlng,
-					mapType: "ROADMAP"
-				});
-			}
-		});
+		this.on(this.app,"country:select",id => this.updateMap(id));
 	}
-	setOptions(config){	// ????????????????
+	urlChange(){
+		const cid = this.getParam("cid",true);
+		this.updateMap(cid);
+	}
+	updateMap(id){
 		const map = this.getRoot();
-		map.config.zoom = config.zoom;
-		map.config.center = config.center;
-		map.config.mapType = config.mapType;
-		map.refresh();
+		if (window.google){
+			const item = countries.getItem(id);
+			map.config.zoom = item.zoom;
+			map.config.center = [item.lat,item.lng];
+			map.render();
+		}
 	}
 }

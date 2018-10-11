@@ -15,9 +15,9 @@ export default class ToolbarView extends JetView{
 									view:"label", template:"Webix Geo Explorer"
 								},
 								{},
-								{ view:"icon", icon:"wxi-clock" },
+								{ view:"icon", icon:"mdi mdi-circle-edit-outline" },
 								{ view:"icon", icon:"wxi-calendar" },
-								{ view:"icon", icon:"wxi-pencil" }
+								{ view:"icon", icon:"mdi mdi-brush" }
 							]
 						}
 					]
