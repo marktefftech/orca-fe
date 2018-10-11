@@ -23,7 +23,10 @@ export default class CitiesView extends JetView {
 	}
 	init(grid){
 		this.on(this.app,"country:select",id => {
-			countries.waitData.then(() => grid.parse(countries.getItem(id).cities));
+			countries.waitData.then(() => {
+				grid.clearAll();
+				grid.parse(countries.getItem(id).cities);
+			});
 		});
 	}
 	urlChange(){
