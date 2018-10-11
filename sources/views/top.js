@@ -2,6 +2,7 @@ import {JetView} from "webix-jet";
 import CountriesView from "views/countries";
 import ToolbarView from "views/toolbar";
 import DetailsView from "views/details";
+import DescriptionView from "views/description";
 
 export default class TopView extends JetView{
 	config(){
@@ -22,11 +23,7 @@ export default class TopView extends JetView{
 								{
 									header:"Description",
 									gravity:2,
-									body:{
-										id:"dsc",
-										template:"#dsc#",
-										scroll:"y"
-									}
+									body:DescriptionView
 								}
 							]
 						}
