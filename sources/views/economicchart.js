@@ -8,15 +8,17 @@ export default class EconomicChartView extends JetView{
 			view:"chart",
 			type:"bar",
 			value:"#sales#",
-			color:"#37d67a",
-			barWidth:60,
+			color:"#8664C6",
+			barWidth:50,
 			radius:0,
 			xAxis:{
-				title:"Sales per year",
-				template:"#year#"
+				template:"#year#", lines:false
 			},
 			yAxis:{
-				title:"Sales,million"
+				color:"#fff", start:0, step:2, end:14
+			},
+			tooltip:{
+				template:"Sales: #sales#"
 			}
 		};
 	}

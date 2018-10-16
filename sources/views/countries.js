@@ -8,14 +8,19 @@ export default class CountriesView extends JetView {
 			width:240,
 			select:true,
 			tooltip:{
-				template:"#name#<br>Area: #area# sq km<br>Population: #population#<br>Capital: #capital#<br>Language: #language#"
+				template:obj => `${obj.name}<br>
+					Area: ${webix.i18n.numberFormat(obj.area)} sq km<br>
+					Population: ${webix.i18n.numberFormat(obj.population)}<br>
+					Capital: ${obj.capital}<br>
+					Language: ${obj.language}
+				`
 			},
 			type:{
 				height:76,
 				template:obj => `<image class="flag" src="common/flags/${obj.img}.png" />
 					<div class="text">
 						<span class="country_name">${obj.name}</span>
-						<span class="country_area">${obj.area} sq km</span>
+						<span class="country_area">${webix.i18n.numberFormat(obj.area)} sq km</span>
 						<span class="capital">${obj.capital}</span>
 					</div>`
 			},
