@@ -10,8 +10,7 @@ export default class DescriptionView extends JetView{
 	}
 	init(tpl){
 		this.on(this.app,"country:select",id => {
-			tpl.setHTML(`<div class="country_description">${countries.getItem(id).dsc}</div>`);
+			tpl.setHTML(countries.getItem(id).dsc);
 		});
 	}
 }
-								

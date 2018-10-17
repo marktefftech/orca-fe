@@ -23,6 +23,7 @@
 	color:#FF5C4C;
 }
 /* country description */
-.country_description{
-	padding:4px 0px;
+p.description_paragraph{
+	margin:0px;
+	padding-top:8px;
 }
