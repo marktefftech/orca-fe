@@ -6,6 +6,7 @@ import DescriptionView from "views/description";
 
 export default class TopView extends JetView{
 	config(){
+		const shadows = this.app.config.shadows;
 		return {
 			rows:[
 				ToolbarView,
@@ -14,7 +15,9 @@ export default class TopView extends JetView{
 					cols:[
 						{
 							header:"Countries",
-							body:CountriesView
+							body:CountriesView,
+							css:shadows,
+							type:"panel"
 						},
 						{
 							margin:10,
@@ -23,7 +26,8 @@ export default class TopView extends JetView{
 								{
 									header:"Description",
 									gravity:2,
-									body:DescriptionView
+									body:DescriptionView,
+									type:"panel"
 								}
 							]
 						}
@@ -31,5 +35,16 @@ export default class TopView extends JetView{
 				}
 			]
 		};
+	}
+	init(view){
+		this.on(this.app,"toggle:panels",(mode) => {
+			const panels = view.queryView({ type:"panel" },"all");
+			if (mode)
+				for (let i = 0; i < panels.length; i++)
+					panels[i].expand();
+			else
+				for (let i = 0; i < panels.length; i++)
+					panels[i].collapse();
+		});
 	}
 }
