@@ -14,7 +14,7 @@ export default class CitiesView extends JetView {
 					sort:"int", fillspace:2,
 					template:obj => {
 						const change = obj.change ? (obj.change > 0 ? "arrow-up-thick green" : "arrow-down-thick red") : "";
-						return obj.population + `<span class="webix_icon mdi mdi-${change}"></span>`;
+						return `<span class="webix_icon mdi mdi-${change}"></span>` + obj.population;
 					}
 				},
 				{ id:"area", header:"Area", sort:"int", fillspace:2 }
