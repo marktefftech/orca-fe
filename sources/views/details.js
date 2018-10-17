@@ -21,7 +21,8 @@ export default class DetailsView extends JetView{
 								{ value:"Cities", id:"cities"},
 								{ value:"Economic", id:"economicchart"}
 							]
-						}
+						},
+						{ width:4 }
 					]
 				},
 				{ $subview:true }

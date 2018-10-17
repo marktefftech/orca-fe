@@ -15,14 +15,15 @@ export default class TopView extends JetView{
 					type:"clean", padding:5,
 					cols:[
 						{
-							type:"clean", margin:10, padding:5,
-							rows:[
+							type:"clean", margin:1, padding:5,
+							cols:[
 								{
 									header:"Countries",
 									body:CountriesView,
 									css:shadows,
 									type:"panel"
-								}
+								},
+								{width:1}
 							]
 						},
 						{
