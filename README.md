@@ -1,10 +1,7 @@
-Banking Demo App (for the new Webix skin)
+Geo Explorer Demo
 ===================
 
-The project on invision:
-
-- https://projects.invisionapp.com/d/main#/console/12386541/309366070/preview
-- https://projects.invisionapp.com/d/main#/console/12386541/313827075/preview
+A demo for viewing countries on a map and the related data.
 
 ### How to run
 
