@@ -27,3 +27,7 @@ p.description_paragraph{
 	margin:0px;
 	padding-top:8px;
 }
+/* top layout */
+.app_layout.webix_layout_line{
+	background: #EBEDF0;
+}

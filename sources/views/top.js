@@ -8,25 +8,32 @@ export default class TopView extends JetView{
 	config(){
 		const shadows = this.app.config.shadows;
 		return {
+			css:"app_layout",
 			rows:[
 				ToolbarView,
 				{
-					type:"space",
+					type:"clean", padding:5,
 					cols:[
 						{
-							header:"Countries",
-							body:CountriesView,
-							css:shadows,
-							type:"panel"
+							type:"clean", margin:10, padding:5,
+							rows:[
+								{
+									header:"Countries",
+									body:CountriesView,
+									css:shadows,
+									type:"panel"
+								}
+							]
 						},
 						{
-							margin:10,
+							type:"clean", margin:10, padding:5,
 							rows:[
 								DetailsView,
 								{
 									header:"Description",
 									gravity:2,
 									body:DescriptionView,
+									css:shadows,
 									type:"panel"
 								}
 							]

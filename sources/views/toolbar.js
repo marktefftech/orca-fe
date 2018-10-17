@@ -18,7 +18,7 @@ export default class ToolbarView extends JetView{
 								},
 								{},
 								{
-									view:"icon", icon:"mdi mdi-circle-edit-outline",
+									view:"icon", icon:"mdi mdi-box-shadow",
 									tooltip:"Add / remove shadows",
 									shadows:shadows,
 									click:function(){
@@ -34,7 +34,7 @@ export default class ToolbarView extends JetView{
 									}
 								},
 								{
-									view:"icon", icon:"mdi mdi-arrow-expand-all",
+									view:"icon", icon:"mdi mdi-arrow-collapse-left",
 									tooltip:"Collapse / expand panels",
 									open:true,
 									click:function(){

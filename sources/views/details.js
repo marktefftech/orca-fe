@@ -2,8 +2,10 @@ import {JetView, plugins} from "webix-jet";
 
 export default class DetailsView extends JetView{
 	config(){
+		const shadows = this.app.config.shadows;
 		return {
 			gravity:3,
+			css:shadows,
 			rows:[
 				{
 					view:"toolbar",
