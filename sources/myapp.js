@@ -9,7 +9,7 @@ export default class MyApp extends JetApp{
 			router 		: HashRouter,
 			debug 		: !PRODUCTION,
 			start 		: "/top/map",
-			shadows		: webix.storage.local.get("geo_explorer_shadows") || ""
+			shadows		: window.localStorage ? (webix.storage.local.get("geo_explorer_shadows") || "") : ""
 		};
 
 		super({ ...defaults, ...config });
