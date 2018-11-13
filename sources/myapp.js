@@ -3,13 +3,18 @@ import {JetApp, HashRouter } from "webix-jet";
 
 export default class MyApp extends JetApp{
 	constructor(config){
+		let shadows = "";
+		try{
+			shadows = webix.storage.local.get("geo_explorer_shadows")
+		}
+		catch(err){/* for blocked cookies */}
 		const defaults = {
 			id			: APPNAME,
 			version 	: VERSION,
 			router 		: HashRouter,
 			debug 		: !PRODUCTION,
 			start 		: "/top/map",
-			shadows		: window.localStorage ? (webix.storage.local.get("geo_explorer_shadows") || "") : ""
+			shadows		: shadows || ""
 		};
 
 		super({ ...defaults, ...config });

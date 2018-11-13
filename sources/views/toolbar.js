@@ -22,14 +22,14 @@ export default class ToolbarView extends JetView{
 									tooltip:"Add / remove shadows",
 									shadows:shadows,
 									click:function(){
-										if (this.config.shadows){
+										if (this.config.shadows)
 											this.config.shadows = this.$scope.app.config.shadows = "";
-											webix.storage.local.put("geo_explorer_shadows","");
-										}
-										else {
+										else
 											this.config.shadows = this.$scope.app.config.shadows = "webix_shadow_small";
-											webix.storage.local.put("geo_explorer_shadows","webix_shadow_small");
+										try{
+											webix.storage.local.put("geo_explorer_shadows",this.config.shadows);
 										}
+										catch(err){/* for blocked cookies */}
 										this.$scope.app.refresh();
 									}
 								},
