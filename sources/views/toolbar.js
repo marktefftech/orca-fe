@@ -14,7 +14,7 @@ export default class ToolbarView extends JetView{
 						{
 							cols:[
 								{
-									view:"label", template:"Webix Geo Explorer"
+									view:"label", label:"Webix Geo Explorer", css:"header_label",
 								},
 								{},
 								{

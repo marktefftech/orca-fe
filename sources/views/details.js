@@ -11,7 +11,7 @@ export default class DetailsView extends JetView{
 					view:"toolbar",
 					elements:[
 						{
-							view:"label", template:"Details"
+							view:"label", label:"Details", css:"header_label"
 						},
 						{
 							view:"segmented",

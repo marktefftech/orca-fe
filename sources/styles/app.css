@@ -31,3 +31,6 @@ p.description_paragraph{
 .app_layout.webix_layout_line{
 	background: #EBEDF0;
 }
+.header_label .webix_el_box{
+	font-size:16px;
+}
