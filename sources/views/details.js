@@ -10,8 +10,9 @@ export default class DetailsView extends JetView{
 				{
 					view:"toolbar",
 					elements:[
+						{ width:4 },
 						{
-							view:"label", label:"Details", css:"header_label"
+							view:"label", label:"Details"
 						},
 						{
 							view:"segmented",
@@ -27,7 +28,7 @@ export default class DetailsView extends JetView{
 				},
 				{ $subview:true }
 			]
-		};		
+		};
 	}
 	init(){
 		this.use(plugins.Menu,this.$$("seg:btn"));

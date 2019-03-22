@@ -1,7 +1,7 @@
 import {JetView} from "webix-jet";
 import {countries} from "models/countries";
 
-export default class CitiesView extends JetView {   
+export default class CitiesView extends JetView {
 	config(){
 		return {
 			view:"datatable",
