@@ -3,6 +3,7 @@ import CountriesView from "views/countries";
 import ToolbarView from "views/toolbar";
 import DetailsView from "views/details";
 import DescriptionView from "views/description";
+import dashboardView from "views/customFrame";
 
 export default class TopView extends JetView{
 	config(){
@@ -33,7 +34,7 @@ export default class TopView extends JetView{
 								{
 									header:"Description",
 									gravity:2,
-									body:DescriptionView,
+									body:dashboardView,
 									css:shadows,
 									type:"panel"
 								}

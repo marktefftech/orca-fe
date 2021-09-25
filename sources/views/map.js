@@ -4,9 +4,7 @@ import {countries} from "models/countries";
 export default class MapView extends JetView {
 	config(){
 		return {
-			//provide your own Google API key
-			key:"AIzaSyAi0oVNVO-e603aUY8SILdD4v9bVBkmiTg",
-			view:"google-map"
+			view:"iframe", id:"frame-body", src:"https://markteffeteller.users.earthengine.app/view/sea-temp",
 		};
 	}
 	init(){

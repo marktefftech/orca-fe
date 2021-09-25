@@ -15,7 +15,7 @@ export default class ToolbarView extends JetView{
 							cols:[
 								{ width:12 },
 								{
-									view:"label", label:"Webix Geo Explorer"
+									view:"label", label:"ORCA Analytics Platform"
 								},
 								{},
 								{

@@ -35,7 +35,7 @@ export default class CountriesView extends JetView {
 	init(list){
 		list.sync(countries);
 		const cid = this.getParam("cid",true);
-		countries.waitData.then(() => {
+		countries.waitDaxta.then(() => {
 			list.select(cid||1);
 			list.showItem(cid||1);
 		});
